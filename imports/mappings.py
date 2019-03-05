@@ -22,6 +22,7 @@ def produtos():
         "codigonfe": ["id_produto", str],
         "descricao": ["desc_produto", conversions.identity],
         "situacao": [None, conversions.constantly("A")],
+        "estoque": [None, conversions.constantly("S")],
         "unidade": [None, conversions.constantly(DEFAULT_PRODUTO_UNIDADE)],
         "custopadrao": ["valor_custo_produto", conversions.identity],
         "precovenda": ["valor_produto", conversions.identity],
