@@ -56,6 +56,9 @@ optional arguments:
 
 ```
 
+Crie um cronjob ou uma tarefa no agendador de tarefas para executar o comando com a frequência desejada.
+
+
 ## Observações
 * Caso nenhum parâmetro seja informado, será usada opção `--today` que corresponde a usar `--since` com a data de hoje.
 * Para exibir os comandos que serão aplicados no banco, sem executá-los de fato, utilize a opção `--dry-run`
