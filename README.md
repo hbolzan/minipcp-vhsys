@@ -25,9 +25,9 @@ baixe e instale um dos seguintes pacotes
 ```
 * Copie o arquivo `local_settings.sample` para `local_settings.py`
 * Altere o arquivo `local_settings.py` e preencha 
-** os tokens VHSYS 
-** a senha do banco de dados
-** o host do banco de dados se não for `localhost`
+ ** os tokens VHSYS 
+ ** a senha do banco de dados
+ ** o host do banco de dados se não for `localhost`
 * Verifique se as configurações do arquivo `settings.py` precisam ser alteradas
 
 ## Como usar
