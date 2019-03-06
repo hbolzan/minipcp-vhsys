@@ -11,6 +11,8 @@ def clientes():
         "inscricao_estadual": ["insc_estadual", conversions.identity],
         "apelido": ["fantasia_cliente", conversions.identity],
         "razaosocial": ["razao_cliente", conversions.identity],
+        "pode_alterar_precos": [None, conversions.constantly("S")],
+        "pais": [None, conversions.constantly(1058)],
     }
 
 
