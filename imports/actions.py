@@ -21,7 +21,10 @@ def process_children_defs(db_conn, parent_source_record, parent_def):
     for child_def_meta in parent_def.get("children_defs"):
         args = [resolve_def_arg(db_conn, parent_source_record, f) for f in child_def_meta.get("def_args")]
         child_def = child_def_meta.get("def_fn")(*args)
-        children_upserts += process_data(db_conn, child_def)
+        try:
+            children_upserts += process_data(db_conn, child_def)
+        except TypeError:
+            pass
     return children_upserts
 
 
