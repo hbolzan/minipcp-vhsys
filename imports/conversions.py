@@ -2,6 +2,10 @@ def identity(x):
     return x
 
 
+def with_max_length(max_length):
+    return lambda x: x[:max_length] if x else x
+
+
 def identity_or_none(x):
     return None if not x else x
 
