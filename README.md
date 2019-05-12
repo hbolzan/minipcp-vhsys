@@ -40,7 +40,10 @@ Para rodar em Windows, baixe e instale um dos seguintes pacotes
 ```
 # mkvirtualenv --python=`which python3` minipcp-vhsys
 ```
-* Crie uma pasta e copie nela os arquivos do projeto
+* Crie uma pasta e copie nela os arquivos do projeto ou faça um clone deste repositório
+```
+git clone https://github.com/hbolzan/minipcp-vhsys.git
+```
 * Pela linha de comando, entre na pasta do projeto e rode
 ```
 # pip install -r requirements.txt
