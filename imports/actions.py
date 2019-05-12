@@ -120,10 +120,14 @@ def resolve_mapping(source_record, mapping):
     result = {}
     for target_field, source_mapping in mapping.items():
         source_field, resolving_fn = [source_mapping[0], source_mapping[1]]
-        target_value = resolving_fn(
-            source_record.get(source_field),
-            *mapping_aditional_args(source_record, source_mapping)
-        )
+        try:
+            target_value = resolving_fn(
+                source_record.get(source_field),
+                *mapping_aditional_args(source_record, source_mapping)
+            )
+        except AttributeError:
+            print(source_record)
+            target_value = None
         result[target_field] = target_value
     return result
 
